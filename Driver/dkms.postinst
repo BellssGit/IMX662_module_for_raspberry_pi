@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dtc -Wno-interrupts_property -@ -I dts -O dtb -o imx662.dtbo imx662-overlay.dts
+
+install -m 751 imx662.dtbo /boot/overlays/
